@@ -1,0 +1,27 @@
+@use "./variables.scss" as variables;
+
+.game-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  gap: variables.$spacing-6;
+  padding: variables.$spacing-6;
+
+  width: 616px;
+  height: 640px;
+}
+
+.game-container__left-section {
+  height: 100%;
+}
+
+.game-container__right-section {
+  min-width: variables.$right-section-width;
+  height: 100%;
+ 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 24px;
+}

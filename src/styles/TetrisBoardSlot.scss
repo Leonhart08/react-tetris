@@ -1,0 +1,25 @@
+@use "./variables.scss" as variables;
+
+.tetris-board-slot__inner-frame {
+  width: 26px;
+  height: 26px;
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  border: 1px solid variables.$secondary;
+  border-radius: 1px;
+}
+
+.tetris-board-slot__inner-frame-empty {
+  width: 26px;
+  height: 26px;
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  border: 1px solid #B4AF9A;
+  border-radius: 1px;
+}

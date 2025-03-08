@@ -1,0 +1,36 @@
+@use "./variables.scss" as variables;
+
+.next-piece-slot {
+  width: 32px;
+  height: 32px;
+
+  position: absolute;
+}
+
+.next-piece-slot--i-block {
+  transform: translate(-28px , -12px);
+}
+
+.next-piece-slot--t-block {
+  transform: translate(-12px , 0px);
+}
+
+.next-piece-slot--s-block {
+  transform: translate(-12px , 6px);
+}
+
+.next-piece-slot--z-block {
+  transform: translate(-12px , -28px);
+}
+
+.next-piece-slot--l-block {
+  transform: translate(-12px , -28px);
+}
+
+.next-piece-slot--j-block {
+  transform: translate(-12px , -22px);
+}
+
+.next-piece-slot--o-block {
+  transform: translate(-28px , -28px);
+}
