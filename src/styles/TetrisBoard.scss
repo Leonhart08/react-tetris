@@ -1,0 +1,71 @@
+@use "./variables.scss" as variables;
+
+.tetris-board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.tetris-board__container {
+  width: calc(32*10px);
+  height: calc(32*20px);
+  background-color: variables.$overlay;
+  position: relative;
+  margin: 0 12px;
+}
+
+.tetris-board-slot {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+}
+
+.tetris-board__game-over-overlay {
+  position: absolute;
+  font-size: 18px;
+  z-index: 2;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: variables.$background-color;
+  padding: variables.$spacing-3 variables.$spacing-4;
+  border-radius: 3px;
+  color: white;
+}
+
+.tetris-board__game-over-label {
+  border-top: 1px solid variables.$secondary-light;
+  border-bottom: 1px solid variables.$secondary-light;
+  padding: variables.$spacing-1 variables.$spacing-8;
+  letter-spacing: 2px;
+  text-wrap: nowrap;
+  font-weight: 400;
+  user-select: none;
+}
+
+.tetris-board__border {
+  width: 26px;
+  height: 100%;
+  
+  & > div {
+    background-color: variables.$primary-dark;
+    width: 16px;
+    height: 100%;
+    & > div {
+      margin-right: auto;
+    }
+  }
+}
+
+.tetris-board__border--left {
+  border-right: 3px solid variables.$primary-dark;
+}
+
+.tetris-board__border--right {
+  border-left: 3px solid variables.$primary-dark;
+  & > div {
+    margin-left: auto;
+  }
+}

@@ -1,0 +1,67 @@
+@use "./variables.scss" as variables;
+
+.game-status__container {
+  width: 136px;
+
+  border-radius: 5px;
+  padding: variables.$spacing-4;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 12px;
+}
+
+.game-status__score {
+  background-color: red;
+}
+
+.game-status__score-label {
+  background-color: variables.$secondary-light;
+  padding: variables.$spacing-1 variables.$spacing-3;
+  width: 144px;
+  height: 25px;
+  color: variables.$primary-light;
+  letter-spacing: 1.5px;
+  font-size: 14px;
+}
+
+.game-status__score-value {
+  background-color: variables.$primary-light;
+  padding: variables.$spacing-1 variables.$spacing-3;
+  width: 144px;
+  height: 25px;
+  color: variables.$secondary-light;
+  letter-spacing: 1.5px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.game-status__info {
+  width: 144px;
+  display: flex;
+  flex-direction: row;
+}
+
+.game-status__info > div {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+
+  & > div {
+    width: 50%;
+  }
+}
+
+.game-status__info-label {
+  font-weight: 600;
+  color: variables.$secondary-light
+}
+
+
+.game-status__info-value {
+  font-weight: 400;
+  color: variables.$secondary-light
+}
