@@ -40,17 +40,19 @@
 }
 
 .game-status__info {
-  width: 100%;
+  width: 144px;
   display: flex;
   flex-direction: row;
-
-  width: variables.$right-section-width;
 }
 
 .game-status__info > div {
   display: flex;
-  width: 50%;
+  width: 100%;
   flex-direction: column;
+
+  & > div {
+    width: 50%;
+  }
 }
 
 .game-status__info-label {

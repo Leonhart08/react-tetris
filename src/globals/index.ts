@@ -2,7 +2,6 @@
 
 export const PIECES_TYPES = ["o-block", "i-block", "j-block", "s-block", "z-block", "t-block", "l-block"]
 
-
 export const PIECES_COLOR = {
   "o-block": "#4DCD73",
   "i-block": "#E0D178",
